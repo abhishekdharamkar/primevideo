@@ -2,8 +2,8 @@ function Navbar() {
   return (
     <div className="">
       <div
-        className=" d-flex justify-content-between"
-        style={{ backgroundColor: "rgb(26,36,47)", position: "relative",height: "72px" }}
+        className=" d-flex justify-content-between "
+        style={{ backgroundColor: "rgb(26,36,47)",height: "72px" , position: "fixed",top: "0",width: "100%",overflow:"hidden",zIndex:"1"}}
       >
         <img
           style={{ padding: "20px 0px 0px 21px",  marginLeft: "3rem" }}

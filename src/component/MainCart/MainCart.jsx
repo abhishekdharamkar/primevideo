@@ -11,14 +11,16 @@ function MainCart(props) {
         movie => movie.categoryId === comedyMovie,
     )
     return(
-        <div>
-            <div className="movies-container" style={{color:"white",marginLeft:"6rem",marginTop:"3rem"}}>
+        
+            <div className="container" style={{color:"white",marginLeft:"6rem",marginTop:"3rem",marginRight:"1px"}}>
         <p className="movies-heading" style={{fontWeight:"600", inlineSize: "fit-content" , marginBottom:"4px"}} >Action Movies</p>
         <MovieSlider moviesList={actionMoviesList} />
         <p className="movies-heading" style={{fontWeight:"600", inlineSize: "fit-content" , marginTop:"12px", marginBottom:"4px"}}>Comedy Movies </p>
         <MovieSlider moviesList={comedyMoviesList} />
+        <p className="movies-heading" style={{fontWeight:"600", inlineSize: "fit-content" , marginTop:"12px", marginBottom:"4px"}}>Comedy Movies </p>
+        <MovieSlider moviesList={comedyMoviesList} />
       </div>
-        </div>
+        
     );
 
 }export default MainCart;

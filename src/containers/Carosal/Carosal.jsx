@@ -1,7 +1,32 @@
 import Carousel from 'react-bootstrap/Carousel';
+import "./Carosal.css"
 function Carosals() {
+//   <style>
+//     .carousel-indicators button {
+//   height: 10px !important;
+//   width: 10px !important;
+//   border-radius: 100% !important;
+  
+// }
+
+// .carousel-indicators  {
+  
+//   margin-bottom: 1px !important;
+// margin-top: 3rem !important;
+// border-radius: 100%;
+// top: 19.1rem;
+// color: #CACDD8 !important;
+
+// }
+
+// .carousel-indicators [data-bs-target] {
+//   background-color: #0156FF  !important;
+ 
+
+// }
+//   </style>
     return(
-        <div className="big-img ">
+        <div className="big-img" style={{marginTop:"72px"}}>
         <Carousel indicators={true} controls={true}>
         <Carousel.Item interval={1000}>
           <img
