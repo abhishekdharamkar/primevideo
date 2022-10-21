@@ -3,6 +3,7 @@ import Slider from './component/Carts/Slider';
 import MainCart from './component/MainCart/MainCart';
 import Carosals from './containers/Carosal/Carosal';
 import Navbar from './containers/NavBar/Navbar';
+import Registration from './pages/Registration';
 
 function App() {
   const moviesList = [
@@ -116,6 +117,8 @@ function App() {
    <Navbar/>
    <Carosals/>
    <MainCart moviesList={moviesList}/>
+  
+   {/* <Registration/> */}
     </div>
   );
 }

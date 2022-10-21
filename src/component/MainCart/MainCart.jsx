@@ -12,7 +12,7 @@ function MainCart(props) {
     )
     return(
         
-            <div className="container" style={{color:"white",marginLeft:"6rem",marginTop:"3rem",marginRight:"1px"}}>
+        <div className="container" style={{color:"white",marginLeft:"6rem",marginTop:"3rem",marginRight:"1px"}}>
         <p className="movies-heading" style={{fontWeight:"600", inlineSize: "fit-content" , marginBottom:"4px"}} >Action Movies</p>
         <MovieSlider moviesList={actionMoviesList} />
         <p className="movies-heading" style={{fontWeight:"600", inlineSize: "fit-content" , marginTop:"12px", marginBottom:"4px"}}>Comedy Movies </p>

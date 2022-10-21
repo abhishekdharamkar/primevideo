@@ -5,8 +5,18 @@ import 'slick-carousel/slick/slick-theme.css'
 
 import MovieItem from '../MoviesItem/MoviesItem'
 
-const MovieSlider = props => {
+import Fab from '@mui/material/Fab';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import 'reactjs-popup/dist/index.css'
+import * as React from 'react';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import { useSelector, useDispatch } from 'react-redux'
+import { addToFav, removeFromFav } from '../../app/slice/favSlice';
 
+const MovieSlider = props => {
+  const fave = useSelector((state) => state.fav.value)
+  const favNo = useSelector((state) => state.fav.id)
+  const dispatch = useDispatch()
 // const [index, setIndex] = useState(0);
 // const [showPrevArrow, setShowPrevArrow] = useState(false);
 // const [showNextArrow, setShowNextArrow] = useState(slides.length > 1);
@@ -41,7 +51,10 @@ const MovieSlider = props => {
     <div className=''>
       <Slider {...settings}>
         {moviesList.map(eachMovie => (
+          <div>
           <MovieItem key={eachMovie.id} movieDetails={eachMovie} />
+   
+          </div>
         ))}
       </Slider>
     </div>
